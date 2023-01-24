@@ -137,8 +137,8 @@ function datos(){
       alert("Ingrese el dato nuevamente");
       ingresarDatos();
       pregunta = prompt(`¿Son ${nombre} ${apellido} los datos correctos?`).toUpperCase();
-    }else if((guardar !="SI") && (guardar !="NO")){
-        alert("Elija una opción")
+    }else if((pregunta !="SI") && (pregunta !="NO")){
+        alert("Las opciones disponibles son SI o NO");
         pregunta = prompt(`¿Son ${nombre} ${apellido} los datos correctos?`).toUpperCase();
           }
   }
@@ -194,7 +194,7 @@ function guardarDato(){
    }
    if(guardar === "NO"){
    }else if((guardar !="SI") && (guardar !="NO")){
-    alert("Elija una opción")
+    alert("Las opciones disponibles son SI o NO")
    }
 } while ((guardar !="SI") && (guardar !="NO"));
   console.log(arrayDatos);
