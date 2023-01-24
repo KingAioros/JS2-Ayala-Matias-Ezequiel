@@ -10,7 +10,6 @@ let body = 0;
 const arrayDatos = [];
 
 //Arrow Function
-
 //Permite ingresar los datos personales
 let ingresarDatos = () => {
   nombre = prompt ("Ingrese su nombre").toUpperCase();
@@ -98,12 +97,9 @@ const eliminar = () => {
 
 //Se crean objetos
 let crearPersona = () => { persona = new Persona ({ nombre: nombre, apellido : apellido });}
-
 let crearBodyCheck = () => { body = new BodyCheck ({ peso: peso, altura : altura, imc: imc });}
 
 //Object
-
-
 class Persona{
   constructor(literal){
     this.nombre = literal.nombre;
@@ -118,10 +114,7 @@ class BodyCheck{
   }
 }
 
-
 //Funciones
-
-
 function saludar() {
     alert("¡¡Bienvenidos!!");
     alert("No importa si quieres perder peso, hacer algo por tu salud o si estás ganando masa muscular, el Índice de Masa Corporal (IMC en su abreviatura) es, en la mayoría de los casos, el primer valor que se calcula. En función de tu IMC podrás elaborar tu próximo programa de entrenamiento y nutrición. Pero, ¿qué es exactamente el IMC? Y, ¿cómo se calcula?.");
@@ -200,10 +193,7 @@ function guardarDato(){
   console.log(arrayDatos);
 }
 
- 
 // Comandos
-
-
 saludar();
 datos();
 console.log(persona);
